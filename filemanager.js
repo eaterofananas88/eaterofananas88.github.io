@@ -5,7 +5,7 @@ console.log(myParam)
 
 function download(filename) {
   var element = document.createElement('a');
-  element.setAttribute('href', "https://eaterofananas.000webhostapp.com/files/" + myParam);
+  element.setAttribute('href', "files/" + myParam);
 
   element.style.display = 'none';
   document.body.appendChild(element);
