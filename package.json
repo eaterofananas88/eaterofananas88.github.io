@@ -1,5 +1,0 @@
-{
-  "dependencies": {
-    "express": "github:expressjs/express"
-  }
-}
