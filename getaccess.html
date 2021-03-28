@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <script>
+            var pbox = document.getElementById("pass")
+
+            function OnClick() {
+                const p = pbox.nodeValue
+                console.log(p)
+            }
+            console.log("a")
+        </script>
+
+        <style>
+            body {
+                background-color: rgb(0, 119, 255);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            input {
+                position: fixed;
+                right: 50%;
+                bottom: 50%;
+            }
+
+            button {
+                position: fixed;
+                right: 50%;
+                bottom: 55%;
+            }
+        </style>
+        <input type="password" id="pass">
+        <button type="submit" onclick="OnClick()">Submit</button>
+    </body>
+</html>
