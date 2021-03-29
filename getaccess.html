@@ -6,10 +6,11 @@
             var pbox = document.getElementById("pass")
 
             function OnClick() {
-                const p = pbox.nodeValue
+                const p = pbox.value
                 console.log(p)
             }
-            console.log("a")
+            
+            
         </script>
 
         <style>
@@ -18,19 +19,16 @@
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
 
-            input {
+            div {
                 position: fixed;
                 right: 50%;
                 bottom: 50%;
             }
-
-            button {
-                position: fixed;
-                right: 50%;
-                bottom: 55%;
-            }
         </style>
-        <input type="password" id="pass">
-        <button type="submit" onclick="OnClick()">Submit</button>
+        <div>
+            <label for="userPassword">Password: </label>
+            <input id="userPassword" type="password" required>
+            <input type="submit" value="Submit">
+        </div>
     </body>
 </html>
