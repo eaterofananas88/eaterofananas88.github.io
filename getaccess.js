@@ -1,4 +1,3 @@
-window.location.refresh(true)
 var pass = document.getElementById("pass")
 
 function OnClick() {
