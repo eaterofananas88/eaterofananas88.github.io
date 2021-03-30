@@ -2,16 +2,7 @@
 
 <html>
     <body>
-        <script>
-            var pbox = document.getElementById("pass")
-
-            function OnClick() {
-                const p = pbox.value
-                console.log(p)
-            }
-            
-            
-        </script>
+        <script src="getaccess.js"></script>
 
         <style>
             body {
@@ -28,7 +19,7 @@
         <div>
             <label for="userPassword">Password: </label>
             <input id="userPassword" type="password" required>
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="OnClick()">Submit</button>
         </div>
     </body>
 </html>
