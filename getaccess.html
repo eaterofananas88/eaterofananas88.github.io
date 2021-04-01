@@ -7,7 +7,17 @@
         <meta http-equiv="Expires" content="-1"/>
     </head>
     <body>
-        <script src="getaccess.js"></script>
+        <script>
+            var submit = document.getElementById("submit")
+            
+            function OnClick() {
+                let pass = document.getElementById("pass")
+                const PASSWORD = pass:GetAttribute("value")
+                console.log(PASSWORD)
+            }
+            
+            submit:SetAttribute("onclick", OnClick)
+        </script>
 
         <style>
             body {
@@ -24,7 +34,7 @@
         <div>
             <label for="userPassword">Password: </label>
             <input id="userPassword" type="password" required>
-            <button type="submit" onclick="OnClick()">Submit</button>
+            <button type="submit" id="submit">Submit</button>
             <p>robux</p>
         </div>
     </body>
