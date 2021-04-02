@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <style>
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding: 20px;
+                background: #232527;
+                color: white;
+            }
+
+            /* Header/Blog Title */
+            .header {
+                padding: 30px;
+                font-size: 40px;
+                text-align: center;
+                background: #000000;
+            }
+
+            /* Create two unequal columns that floats next to each other */
+            /* Left column */
+            .leftcolumn {
+                float: left;
+                width: 75%;
+            }
+
+            /* Right column */
+            .rightcolumn {
+                float: left;
+                width: 25%;
+                padding-left: 20px;
+            }
+
+            /* Fake image */
+            .fakeimg {
+                background-color: #000000;
+                width: 100%;
+                padding: 20px;
+            }
+
+            /* Add a card effect for articles */
+            .card {
+                background-color: #000000;
+                padding: 20px;
+                margin-top: 20px;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #0000;
+                margin-top: 20px;
+            }
+
+            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 800px) {
+                .leftcolumn, .rightcolumn {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        </style>
+        <div class="header">
+            <h2>I don't really like ananas</h2>
+          </div>
+          
+          <div class="row">
+            <div class="leftcolumn">
+              <div class="card">
+                <h2>NO_ANANAS</h2>
+                <h5>Quitting ananas, April 1st 2021</h5>
+                <img src="https://eaterofananas88.xyz/assets/HAHA.png" alt="check the date of the blog">
+                <p>APRIL FOOLS YOJ PROABABLY FELL FOR THAT HAHHAHAHAH</p>
+              </div>
+            </div>
+
+            <div class="rightcolumn">
+              <hr>
+              <hr>
+              <div class="card">
+                <h2>About Me</h2>
+                <img src="https://eaterofananas88.xyz/assets/ananas.png" alt="[insert pineapple here]">
+                <p>Hey there!!!! "Ananas" means "pineapple" in 42 languages, so as you can tell, I like pineapples.</p>
+              </div>
+              <div class="card">
+                <h3>Follow Me</h3>
+                <p><a href="https://www.roblox.com/users/1119136529/profile">Roblox<a></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer">
+            <h2>Thanks to <a href="https://w3schools.com">w3schools.com<a> for the blog layout!!!</h2>
+          </div>
+    </body>
+</html>
