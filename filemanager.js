@@ -35,5 +35,5 @@ if (myParam != null) {
     gotofile(myParam)
 
 } else if (link != null) {
-    goto(link)
+    gotolink(link)
 }
