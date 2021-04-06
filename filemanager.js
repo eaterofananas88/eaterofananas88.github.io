@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('file');
 const link = urlParams.get('link')
 
-var links = JSON.parse("assets/links.json")
+const links = {"vbucks": "https://youtu.be/Z0Uh3OJCx3o", "donotrickrollme": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
 
 function gotofile(filename) {
   var element = document.createElement('a');
