@@ -42,3 +42,5 @@ if (myParam != null) {
 } else if (link != null) {
     gotolink(link)
 }
+
+console.log(btoa(myParam))
