@@ -1,24 +1,19 @@
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('file');
 const link = urlParams.get('link')
-const pass = urlParams.get('passkey')
 
 const links = {"vbucks": "https://youtu.be/Z0Uh3OJCx3o", "donotrickrollme": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
 
 function gotofile(filename) {
-  if (pass != null) {
-    if (pass == atob(myParam)) {
-      var element = document.createElement('a');
-      element.setAttribute('href', "files/" + myParam);
+  var element = document.createElement('a');
+  element.setAttribute('href', "files/" + myParam);
 
-      element.style.display = 'none';
-      document.body.appendChild(element);
+  element.style.display = 'none';
+  document.body.appendChild(element);
 
-      element.click();
+  element.click();
 
-      document.body.removeChild(element);
-    }
-  }
+  document.body.removeChild(element);
 }
 
 function gotolink(linkname) {
