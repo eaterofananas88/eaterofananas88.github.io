@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+      <script>
+        var params = new URLSearchParams()
+        const pass = params.get("pass")
+        const goto = params.get("goto")
+        
+        function gotol(url) {
+          var element = document.createElement('a');
+          element.setAttribute('href', "files/" + atob(myParam));
+
+          element.style.display = 'none';
+          document.body.appendChild(element);
+
+          element.click();
+
+          document.body.removeChild(element);
+        }
+        
+        function setCookie(cname, cvalue, exdays) {
+          var d = new Date();
+          d.setTime(d.getTime() + (exdays*24*60*60*1000));
+          var expires = "expires="+ d.toUTCString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+        
+        if (pass == btoa("Password")) {
+          setCookie("securitytoken", btoa("Password"), 365*(50*50))
+        }
+      </script>
+    </body>
+</html>
