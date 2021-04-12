@@ -52,8 +52,8 @@ if (myParam != null) {
       gotofile(myParam)
     } else {
       gotolink("verify", "?pass=" + pass + "https://eaterofananas88.xyz/?file=" + myParam)
-    }
+}
 
-else if (link != null) {
+if (link != null) {
     gotolink(link, "")
 }
