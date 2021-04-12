@@ -36,7 +36,7 @@ function gotofile(filename) {
 function gotolink(linkname, params) {
   if (links[link]) {
     var element = document.createElement('a');
-    element.setAttribute('href', links[link]);
+    element.setAttribute('href', links[link] + params);
 
     element.style.display = 'none';
     document.body.appendChild(element);
